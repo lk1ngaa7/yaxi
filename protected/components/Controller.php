@@ -33,8 +33,10 @@ class Controller extends CController
       }     
        
 	}
-	public function beforeRender(){
-	   if(Yii::app()->params['static'] == '')
+	// 在 渲染页面之前时确定 静态资源的路由
+	public function beforeRender($view){
+		
+	   if(Yii::app()->params['static'] === '')
 	     Yii::app()->params['static'] = Yii::app()->baseUrl.'/';
 		return true;
 	}
