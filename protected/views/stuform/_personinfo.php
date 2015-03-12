@@ -32,7 +32,7 @@
     </div>
 	 <div class="col-sm-2">
 		 <label for="" class="control-label">姓（汉字）</label>
-		 <input type="text" class="form-control validate[required,custom[chinese]]" id="" placeholder="姓（汉字）" name="lastname_" value="<? echo $per->lastname_ ;?>">
+		 <input type="text" class="form-control validate[required,custom[chinese]]" id="" placeholder="姓（汉字）" name="lastname_" value="<?php echo $per->lastname_ ;?>">
     </div>
 	 <div class="col-sm-2">
 		<label for="" class="control-label">名（拼音）</label>

@@ -35,13 +35,13 @@
                          
 					<ul class="nav nav-list">
 						<li class="<?php echo $this->activateArray[0];?>">
-							<a href="<? echo Yii::app()->createUrl('adminmain/index');?>">
+							<a href="<?php echo Yii::app()->createUrl('adminmain/index');?>">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text"> 管理员首页 </span>
 							</a>
 						</li>
 						<li class="<?php echo $this->activateArray[1];?>">
-							<a href="<? echo Yii::app()->createUrl('adminstu/index');?>">
+							<a href="<?php echo Yii::app()->createUrl('adminstu/index');?>">
 								<i class="icon-list"></i>
 								<span class="menu-text"> 学生管理 </span>
 							</a>

@@ -35,19 +35,19 @@
                          
 					<ul class="nav nav-list">
 						<li class="<?php echo $this->activateArray[0];?>">
-							<a href="<? echo Yii::app()->createUrl('stumain/index');?>">
+							<a href="<?php echo Yii::app()->createUrl('stumain/index');?>">
 								<i class="icon-dashboard"></i>
 								<span class="menu-text"> 首页 </span>
 							</a>
 						</li>
 						<li class="<?php echo $this->activateArray[1];?>">
-							<a href="<? echo Yii::app()->createUrl('stuform/index');?>">
+							<a href="<?php echo Yii::app()->createUrl('stuform/index');?>">
 								<i class="icon-edit"></i>
 								<span class="menu-text"> 报名表 </span>
 							</a>
 						</li>
 						<li class="<?php echo $this->activateArray[2];?>">
-							<a href="<? echo Yii::app()->createUrl('fileupload/index');?>">
+							<a href="<?php echo Yii::app()->createUrl('fileupload/index');?>">
 								<i class="icon-cloud-upload"></i>
 								<span class="menu-text"> 上传专区 </span>
 							</a>
