@@ -16,8 +16,8 @@
 		/*
 		   @Override the method from CController to avoid request loop
 		*/
-		public function beforeAction(){
-		   
+		public function beforeAction($action){
+		    Yii::app()->params['static'] = Yii::app()->baseUrl.'/';
 		    return true;
 		}
 		public function  actionAuth(){
