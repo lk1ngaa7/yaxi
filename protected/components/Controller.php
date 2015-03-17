@@ -62,45 +62,13 @@ class Controller extends CController
 	    Yii::log(CHtml::errorSummary($model),'error','Application.error');
 	 }
 	 public function saveToQiniu($filename,$localfile){
-		Yii::import('application.extensions.*');
-		require_once("qiniu/io.php");
-		require_once("qiniu/rs.php");
-
-		$bucket = "asiafiles";
-		$accessKey = 'le1aR9H0EUEbDz0CQC0nCKWwl9WFDmtQ19NFYuJx';
-		$secretKey = 'GrL79IxkIwxj7MxSAgknCaLcR5qX0ARm_2Lx_X5S';
-
-		Qiniu_SetKeys($accessKey, $secretKey);
-		$putPolicy = new Qiniu_RS_PutPolicy($bucket);
-		$upToken = $putPolicy->Token(null);
-		$putExtra = new Qiniu_PutExtra();
-		$putExtra->Crc32 = 1;
-		list($ret, $err) = Qiniu_PutFile($upToken,$filename,$localfile, $putExtra);
 		
-		if ($err !== null) {
-			return false;
-		} else {
-		    return true;
-		}
+	    return true;
 	 }
 	 public function deleteFromQiniu($filename){
-	 Yii::import('application.extensions.*');
-	    require_once("qiniu/rs.php");
-
-			$bucket = "asiafiles";
-		   $accessKey = 'le1aR9H0EUEbDz0CQC0nCKWwl9WFDmtQ19NFYuJx';
-		   $secretKey = 'GrL79IxkIwxj7MxSAgknCaLcR5qX0ARm_2Lx_X5S';
-
-			Qiniu_SetKeys($accessKey, $secretKey);
-			$client = new Qiniu_MacHttpClient(null);
-
-			$err = Qiniu_RS_Delete($client, $bucket,$filename);
-			
-			if ($err !== null) {
-				return false;
-			} else {
-				return true;
-			}
+	    
+		return true;
+	 
 	 }
 		 
 }

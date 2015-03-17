@@ -26,7 +26,7 @@
 			   $this->adminList = $sql->queryAll();
 			   $ci->with = array('user','project','range');
 			   $pages =  new CPagination(Stuinfo::model()->count($ci));
-			   $pages->pageSize = 1;
+			   $pages->pageSize = 20;
 			   $pages->applyLimit($ci);
 			   $models = Stuinfo::model()->findAll($ci);
 			   //var_dump($models);die();

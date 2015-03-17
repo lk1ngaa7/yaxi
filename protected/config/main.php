@@ -63,7 +63,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=asiaedu',
+			'connectionString' => 'mysql:host=localhost;dbname=eduasian',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -102,8 +102,8 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 	'params'=>array(
-	//'static'=>'http://asiaedu.qiniudn.com/',
+	'static'=>'http://asiaedu.qiniudn.com/',
 	'static'=>'',
-	'files'=>'http://edu-asia-temp-files.qiniudn.com/',
+	
 	),
 );
