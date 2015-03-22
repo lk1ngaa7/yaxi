@@ -15,3 +15,19 @@
 
 - 管理员账号：admin/admin
 - 学生账号：15STEP003/668382
+
+---
+
+#ER图
+
+![](http://kingliu-blog.qiniudn.com/images/eduasian.png)
+
+#部分原型图
+
+![](http://kingliu-blog.qiniudn.com/images/首页原型.png)
+
+![](http://kingliu-blog.qiniudn.com/images/学生报名原型.png)
+
+![](http://kingliu-blog.qiniudn.com/images/注意事项.png)
+
+![](http://kingliu-blog.qiniudn.com/images/资料下载和上传.png)
